@@ -42,10 +42,10 @@ void pre_traversal(node* root) {
 
 int main() {
     cout << "Enter the root: ";
-    node* root = Binary_tree(); // Fixed object instantiation
+    node* root = Binary_tree(); 
 
     cout << "Preorder Traversal: ";
-    pre_traversal(root); // Function call
+    pre_traversal(root); 
 
     return 0;
 }
