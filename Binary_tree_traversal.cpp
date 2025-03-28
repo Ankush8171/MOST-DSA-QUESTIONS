@@ -11,14 +11,15 @@ public:
         data = x;
         left = right = NULL;
     }
-}; // Missing semicolon added here
+}; 
 
 node* Binary_tree() {
     int x;
     cout << "Enter data (-1 for NULL): ";
     cin >> x;
 
-    if (x == -1) return NULL; // Base case to stop recursion
+    if (x == -1) 
+    return NULL; 
 
     node* temp = new node(x);
 
@@ -34,7 +35,7 @@ node* Binary_tree() {
 void pre_traversal(node* root) {
     if (root == NULL) return;
 
-    cout << root->data << " "; // Print the node
+    cout << root->data << " "; 
     pre_traversal(root->left);  // Recursive call for left subtree
     pre_traversal(root->right); // Recursive call for right subtree
 }
